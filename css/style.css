@@ -1,0 +1,560 @@
+@import url("https://fonts.googleapis.com/css?family=Ubuntu");
+/*---------reset css----------*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+font,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  font-family: inherit;
+  vertical-align: baseline;
+}
+
+:focus {
+  outline: 0;
+}
+
+body {
+  line-height: 1;
+  color: #000;
+  background: #fff;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+}
+
+caption,
+th,
+td {
+  text-align: left;
+  font-weight: normal;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+}
+
+blockquote,
+q {
+  quotes: "" "";
+}
+
+/*-------base------*/
+
+html,
+body {
+  font-family: 'Ubuntu', sans-serif;
+  width: 100%;
+  height: 100%;
+}
+
+/*-------header---------*/
+
+.container-header {
+  width: 100%;
+  height: 100%;
+  float: left;
+}
+
+/*----------carousel----------*/
+
+.carousel {
+  height: 100%;
+  width: 100%;
+  background: #fff;
+}
+
+.carousel-inner {
+  height: 100%;
+}
+
+.item {
+  height: 100%;
+}
+
+.photoback1 {
+  width: 100%;
+  height: 100%;
+  background: url("../img/1.png") no-repeat center;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+}
+
+.photoback2 {
+  width: 100%;
+  height: 100%;
+  background: url("../img/10.jpeg") no-repeat center;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+}
+
+.item p {
+  text-align: center;
+  vertical-align: middle;
+  color: #f00;
+  font-size: 3em;
+  line-height: 500px;
+}
+
+/*---------menu----------*/
+
+.navbar-brand {
+  padding: 0;
+}
+
+.navbar-brand img {
+  width: 100px;
+  height: 100%;
+}
+
+.navbar {
+  background: #fff;
+}
+
+.navbar-inverse .navbar-nav li a {
+  border-bottom: 2px solid #000;
+}
+
+.navbar-inverse .navbar-nav li a:hover {
+  color: #000;
+}
+
+.navbar-inverse .navbar-nav>li>a:focus,
+.navbar-inverse .navbar-nav>li>a:hover {
+  color: #000;
+  border-top: 2px solid #000;
+  transition: border-top 0.3s;
+  border-left: 2px solid #000;
+  border-right: 2px solid #000;
+  border-bottom: none;
+  transform: scaleY(8px);
+}
+
+.collapse {
+  float: right;
+}
+
+/*------conteiner-about----------*/
+
+.conteiner-about {
+  height: auto;
+}
+
+.title-about {
+  height: 20em;
+  text-align: center;
+  display: table;
+}
+
+.title-about h2 {
+  font-size: 3.5em;
+  text-transform: uppercase;
+  display: table-cell;
+  vertical-align: middle;
+  color: #333;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.info-about {
+  height: 20em;
+  display: table;
+}
+
+.info-about p {
+  text-align: justify;
+  line-height: 25px;
+  font-family: 'Ubuntu', sans-serif;
+  vertical-align: middle;
+  display: table-cell;
+  font-size: 1em;
+  color: #333;
+  letter-spacing: 1px;
+}
+
+/*---------catolog-product----------*/
+
+.container-product {
+  float: left;
+  height: 23em;
+  line-height: 23em;
+}
+
+.catalog {
+  padding: 0;
+  text-align: center;
+}
+
+.catalog a {
+  padding: 1%;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #ddd;
+  font-size: 1.2em;
+  font-family: Ubuntu sans-serif;
+}
+
+.catalog p {
+  padding: 5%;
+  text-align: justify;
+  font-size: 1.1em;
+  color: #eee;
+  line-height: 1.2em;
+  letter-spacing: 1px;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.catalog-background-one {
+  background: url("../img/3.jpg") no-repeat center;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+}
+
+.catalog-background-two {
+  background: url("../img/4.jpg") no-repeat center;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+}
+
+.catalog-background-three {
+  background: url("../img/6.jpg") no-repeat center;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+}
+
+.conteiner-imposed {
+  width: 100%;
+  height: 23em;
+  background: rgba(0,0,0,0.6);
+  transition: background 0.3s;
+}
+
+.block-text {
+  display: inline-block;
+  vertical-align: middle;
+  line-height: normal;
+}
+
+.seemore a {
+  width: 50%;
+  height: 30px;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 1.2em;
+  border: 2px solid #fff;
+  margin: 5px 20px;
+  display: none;
+}
+
+.conteiner-imposed:hover {
+  transition: background 0.2s;
+  background: rgba(0,0,0,0.9);
+}
+
+.seemore a:hover {
+  display: inline-block;
+}
+
+/*----------process-----------*/
+
+.process {
+  height: 15em;
+  float: left;
+}
+
+.process-text {
+  padding: 0 15%;
+}
+
+.process-text p {
+  text-align: justify;
+  font-size: 1em;
+  color: #333;
+  line-height: 1.2em;
+  letter-spacing: 1px;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+/*--------product-------*/
+
+.product {
+  height: 45em;
+  float: left;
+  padding: 0;
+}
+
+.wrapper {
+  padding: 10% 0 2% 0;
+  width: 100%;
+  float: left;
+  text-align: center;
+}
+
+.wrapper h2 {
+  padding: 1% 0;
+  text-align: center;
+  font-size: 2em;
+  text-transform: uppercase;
+  color: #333;
+  letter-spacing: 1px;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.product-photo {
+  float: left;
+  height: 20em;
+  padding: 2% 0;
+}
+
+.container-photo button {
+  float: left;
+  height: 15em;
+  padding: 0;
+  border: none;
+}
+
+.container-photo img {
+  width: 100%;
+  height: 100%;
+}
+
+/*-------modal-------*/
+
+.modal {
+  text-align: center;
+}
+
+.modal-dialog {
+  display: inline-block;
+  text-align: left;
+  vertical-align: middle;
+}
+
+.modal-body {
+  border-radius: 0;
+  padding: 10px;
+}
+
+.modal-content {
+  background: #000;
+  border-radius: 0;
+}
+
+.modal-body img {
+  width: 100%;
+  height: 100%;
+}
+
+.modal-body p {
+  font-size: 3em;
+  color: #f00;
+}
+
+/*----------info-stuff----------*/
+
+.info-stuff {
+  float: left;
+  height: auto;
+}
+
+.info-stuff-text {
+  padding: 0 15%;
+}
+
+.info-stuff-text p {
+  text-align: justify;
+  font-size: 1em;
+  color: #333;
+  line-height: 1.2em;
+  letter-spacing: 1px;
+  font-family: 'Ubuntu' sans-serif;
+}
+
+/*--------contact--------*/
+
+.contact {
+  float: left;
+  height: 40em;
+  margin: 5% 0 0 0;
+  background: url("../img/10.jpeg") no-repeat center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -ms-background-size: cover;
+  -o-background-size: cover;
+  -background-size: cover;
+}
+
+.contact-imposed {
+  width: 100%;
+  height: 40em;
+  background: rgba(1,1,1,0.5);
+}
+
+form {
+  height: 20em;
+  padding: 10em 0;
+}
+
+.form input,
+textarea {
+  width: 80%;
+  height: 3em;
+  margin: 1em;
+  padding: 2%;
+  border: 2px solid #fff;
+  background: rgba(1,1,1,0);
+  transition: background 0.3s;
+  color: #fff;
+}
+
+textarea {
+  height: 5em;
+}
+
+#submit {
+  width: 10em;
+}
+
+.contact-info {
+  height: 20em;
+  padding: 10em 0;
+}
+
+.contact-info h3 {
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 1.1em;
+  letter-spacing: 1px;
+  line-height: 1.2em;
+  font-family: 'Ubuntu' sans-serif;
+}
+
+.contact-info p {
+  font-size: 1em;
+  color: #fff;
+  letter-spacing: 1px;
+  line-height: 3em;
+  font-family: 'Ubuntu' sans-serif;
+}
+
+.form input:focus {
+  background: rgba(1,1,1,0.5);
+  transition: background 0.3s;
+}
+
+#submit:hover {
+  background: rgba(1,1,1,0.5);
+  transition: background 0.3s;
+}
+
+textarea:focus {
+  background: rgba(1,1,1,0.5);
+  transition: background 0.3s;
+}
+
+/*--------footer----------*/
+
+footer {
+  height: 6em;
+  padding: 0;
+  background: #fff;
+  text-align: center;
+}
+
+footer p {
+  line-height: 5em;
+}
+
+@media (max-width: 767px) {
+  .collapse {
+    float: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .modal:before {
+    display: inline-block;
+    vertical-align: middle;
+    content: " ";
+    height: 100%;
+  }
+}
