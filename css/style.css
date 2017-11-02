@@ -231,7 +231,10 @@ body {
 }
 
 .text-info {
-  height: 100%;
+  height: 20em;
+  text-align: center;
+  vertical-align: middle;
+  display: table;
 }
 
 .info-about p {
