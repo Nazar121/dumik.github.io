@@ -118,7 +118,7 @@ body {
   height: 100%;
 }
 
-/*-------header---------*/
+/*-------header-------*/
 
 .container-header {
   width: 100%;
@@ -126,7 +126,7 @@ body {
   float: left;
 }
 
-/*----------carousel----------*/
+/*------carousel-------*/
 
 .carousel {
   height: 100%;
@@ -217,6 +217,7 @@ body {
 .title-about {
   height: 20em;
   text-align: center;
+  vertical-align: middle;
   display: table;
 }
 
@@ -229,9 +230,8 @@ body {
   font-family: 'Ubuntu', sans-serif;
 }
 
-.info-about {
-  height: 20em;
-  display: table;
+.text-info {
+  height: 100%;
 }
 
 .info-about p {
@@ -248,7 +248,6 @@ body {
 /*---------catolog-product----------*/
 
 .container-product {
-  float: left;
   height: 23em;
   line-height: 23em;
 }
@@ -315,13 +314,14 @@ body {
 }
 
 .seemore a {
-  width: 50%;
+  width: 80%;
   height: 30px;
   text-align: center;
   vertical-align: middle;
   font-size: 1.2em;
   border: 2px solid #fff;
   margin: 5px 20px;
+  display: inline-block;
   display: none;
 }
 
@@ -330,15 +330,19 @@ body {
   background: rgba(0,0,0,0.9);
 }
 
-.seemore a:hover {
+.conteiner-imposed:hover .seemore a {
   display: inline-block;
+}
+
+.seemore a:hover {
+  border: 2px solid #111;
 }
 
 /*----------process-----------*/
 
 .process {
+  width: 100%;
   height: 15em;
-  float: left;
 }
 
 .process-text {
@@ -358,14 +362,12 @@ body {
 
 .product {
   height: 45em;
-  float: left;
   padding: 0;
 }
 
 .wrapper {
   padding: 10% 0 2% 0;
   width: 100%;
-  float: left;
   text-align: center;
 }
 
@@ -380,13 +382,11 @@ body {
 }
 
 .product-photo {
-  float: left;
+  width: 100%;
   height: 20em;
-  padding: 2% 0;
 }
 
 .container-photo button {
-  float: left;
   height: 15em;
   padding: 0;
   border: none;
@@ -395,6 +395,8 @@ body {
 .container-photo img {
   width: 100%;
   height: 100%;
+  padding: 0;
+  border: none;
 }
 
 /*-------modal-------*/
@@ -432,7 +434,6 @@ body {
 /*----------info-stuff----------*/
 
 .info-stuff {
-  float: left;
   height: auto;
 }
 
@@ -452,7 +453,6 @@ body {
 /*--------contact--------*/
 
 .contact {
-  float: left;
   height: 40em;
   margin: 5% 0 0 0;
   background: url("../img/10.jpeg") no-repeat center;
@@ -464,7 +464,7 @@ body {
 }
 
 .contact-imposed {
-  width: 100%;
+  width: auto;
   height: 40em;
   background: rgba(1,1,1,0.5);
 }
@@ -540,13 +540,102 @@ footer {
   text-align: center;
 }
 
-footer p {
+.footer-info {
+  height: 5em;
+  width: 100%;
+}
+
+.footer-info p {
+  height: 5em;
   line-height: 5em;
 }
 
 @media (max-width: 767px) {
   .collapse {
     float: none;
+  }
+
+  .title-about {
+    height: 5em;
+    padding: 0px;
+    margin: 0;
+  }
+
+  .title-about h2 {
+    height: 5em;
+    font-size: 2em;
+    padding: 0px;
+    margin: 0;
+  }
+
+  .process {
+    height: 20em;
+  }
+
+  .catalog {
+    margin: 5px 0;
+  }
+
+  .container-product {
+    height: 69em;
+  }
+
+  .product {
+    height: 69em;
+  }
+
+  .product-photo {
+    height: 60em;
+  }
+
+  .container-photo {
+    padding: 0;
+  }
+
+  .container-photo button {
+    height: 20em;
+    padding: 5px;
+    border: none;
+  }
+
+  .product-photo-mobi {
+    display: none;
+  }
+
+  .contact {
+    height: 58em;
+  }
+
+  .contact-imposed {
+    height: 58em;
+  }
+
+  form {
+    height: 33em;
+    padding: 10em 0;
+  }
+
+  .contact-info {
+    height: 25em;
+    padding: 5em 0;
+  }
+}
+
+@media (max-width: 610px) {
+  .process {
+    height: 25em;
+  }
+}
+
+@media (max-width: 540px) {
+  .process {
+    height: 30em;
+  }
+}
+
+@media (max-width: 425px) {
+  .process {
+    height: 35em;
   }
 }
 
