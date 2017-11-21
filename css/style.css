@@ -189,23 +189,38 @@ body {
   border-bottom: 2px solid #000;
 }
 
-.navbar-inverse .navbar-nav li a:hover {
-  color: #000;
-}
-
 .navbar-inverse .navbar-nav>li>a:focus,
 .navbar-inverse .navbar-nav>li>a:hover {
-  color: #000;
   border-top: 2px solid #000;
   transition: border-top 0.3s;
   border-left: 2px solid #000;
   border-right: 2px solid #000;
   border-bottom: none;
   transform: scaleY(8px);
+  color: #000;
+}
+
+.navbar-inverse .navbar-nav li a:hover {
+  color: #000;
 }
 
 .collapse {
   float: right;
+}
+
+.navbar-toggle {
+  border: none;
+}
+
+.navbar-toggle img {
+  widht: 20px;
+  height: 20px;
+  display: block;
+}
+
+.navbar-inverse .navbar-toggle:focus,
+.navbar-inverse .navbar-toggle:hover {
+  background-color: #fff;
 }
 
 /*------conteiner-about----------*/
