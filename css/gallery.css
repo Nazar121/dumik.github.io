@@ -239,10 +239,10 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  position: absolute;
   width: 80%;
   height: 80%;
   transition: all 1s;
+  position: absolute;
 }
 
 .mask-photo h3 {
@@ -272,16 +272,23 @@ body {
 /*-----carousel-----*/
 
 .carousel {
+  width: 100%;
   height: 100%;
-  background: rgba(0,0,0,0.5);
+  background: rgba(0,0,0,0.75);
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
+  right: 0;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  overflow: hidden;
+  position: fixed;
 }
 
 .carousel-container {
-  height: 80%;
+  height: 70%;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -303,14 +310,38 @@ body {
   background: #fff;
 }
 
+.carousel-info h2 {
+  text-align: center;
+  margin: 2em 0 1em 0;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  font-family: 'Ubuntu' sans-serif;
+}
+
+.carousel-info p {
+  margin: 1em 0 0 0;
+  font-size: 0.9em;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  line-height: 1.3em;
+}
+
 .arrow {
   text-align: center;
 }
 
+.arrow button {
+  width: 50px;
+  height: 50px;
+  padding: 0;
+  margin: 0;
+  border: none;
+}
+
 .arr-right img,
 .arr-left img {
-  width: 40px;
-  height: 40px;
+  width: 50px;
+  height: 50px;
   text-align: center;
 }
 
@@ -322,7 +353,6 @@ footer {
   padding: 0;
   background: #fff;
   text-align: center;
-  float: left;
 }
 
 .footer-info {
