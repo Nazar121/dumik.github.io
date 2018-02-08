@@ -4,9 +4,6 @@
 		<title>Furniture</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta charset="utf-8">
-		<script src="https://code.jquery.com/jquery.js"></script>
-		<script src="js/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-		<script type="text/javascript" src='js/script.js'></script>
 		<link href="js/bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" media="screen">
 		<link rel="stylesheet" type="text/css" href="css/style.css">
 		<link rel="shortcut icon" href="favicon.ico">
@@ -284,6 +281,11 @@
 				<div class="contact-imposed col-md-12">
 					<div class="form col-md-7 col-sm-6 col-xs-12">
 						<form>
+							<!-- Hidden Required Fields -->
+							<input type="hidden" name="project_name" value="Furniture">
+							<input type="hidden" name="admin_email" value="dumik.alive@gmail.com">
+							<input type="hidden" name="form_subject" value="Form Subject">
+							<!-- END Hidden Required Fields -->
 							<input type="text" placeholder="  YOUR NAME">
 							<input type="text" placeholder="  E-MAIL">
 							<textarea id="message-text" type="text" placeholder="  YOUR MESSAGE"></textarea>
@@ -307,6 +309,10 @@
 				</div>
 			</div>
 		</footer>
+		<script src="https://code.jquery.com/jquery.js"></script>
+		<script src="js/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src='js/script.js'></script>
+		<script type="text/javascript" src="js/scriptMail/script.js"></script>
 	</body>
 
 </html> 
