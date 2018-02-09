@@ -372,6 +372,7 @@ opacity 0.9,
 }
 
 .dws {
+  width: 100%;
   height: 25em;
   background: #000;
   overflow: hidden;
@@ -382,6 +383,7 @@ opacity 0.9,
 }
 
 .blocimg {
+  width: 100%;
   height: 100%;
   overflow: hidden;
 }
