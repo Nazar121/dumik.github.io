@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Ubuntu");
+@import url("https://fonts.googleapis.com/css?family=Marmelad");
 /*---------reset css----------*/
 
 html,
@@ -113,7 +113,7 @@ q {
 
 html,
 body {
-  font-family: 'Ubuntu', sans-serif;
+  font-family: 'Marmelad', sans-serif;
   width: 100%;
   height: 100%;
 }
@@ -354,7 +354,7 @@ opacity 0.9,
 
 .info-about p {
   text-align: justify;
-  line-height: 25px;
+  line-height: 2em;
   font-family: 'Ubuntu', sans-serif;
   vertical-align: middle;
   display: table-cell;
@@ -471,7 +471,7 @@ opacity 0.9,
 
 .process {
   width: 100%;
-  height: 15em;
+  height: 20em;
 }
 
 .process-text {
@@ -482,7 +482,7 @@ opacity 0.9,
   text-align: justify;
   font-size: 1em;
   color: #333;
-  line-height: 1.2em;
+  line-height: 2em;
   letter-spacing: 1px;
   font-family: 'Ubuntu', sans-serif;
 }
@@ -599,7 +599,7 @@ opacity 0.9,
   text-align: justify;
   font-size: 1em;
   color: #333;
-  line-height: 1.2em;
+  line-height: 2em;
   letter-spacing: 1px;
   font-family: 'Ubuntu' sans-serif;
 }
@@ -610,7 +610,7 @@ opacity 0.9,
   width: 100%;
   height: 40em;
   margin: 5% 0 0 0;
-  background: url("../img/22.jpg") no-repeat center;
+  background: url("../img/23.jpg") no-repeat center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -ms-background-size: cover;
@@ -711,8 +711,39 @@ footer {
 /*---------media--------*/
 
 @media (max-width: 992px) {
+  .title-about {
+    height: 5em;
+    text-align: center;
+    vertical-align: middle;
+    display: table;
+    padding: 0;
+  }
+
+  .title-about h2 {
+    font-size: 3em;
+    text-transform: uppercase;
+    display: table-cell;
+    vertical-align: middle;
+    color: #333;
+    font-family: 'Ubuntu', sans-serif;
+    padding: 0;
+  }
+
+  .text-info {
+    padding: 0;
+  }
+
+  .text-info p {
+    padding: 0;
+  }
+
   .container-product {
     height: 75em;
+  }
+
+  .process {
+    width: 100%;
+    height: 30em;
   }
 }
 
@@ -770,7 +801,7 @@ footer {
   }
 
   .process {
-    height: 20em;
+    height: 35em;
   }
 
   .product {
@@ -802,19 +833,23 @@ footer {
 
 @media (max-width: 610px) {
   .process {
-    height: 25em;
+    height: 35em;
   }
 }
 
 @media (max-width: 540px) {
   .process {
-    height: 30em;
+    height: 40em;
+  }
+
+  .process-text p {
+    line-height: 1.5em;
   }
 }
 
 @media (max-width: 425px) {
   .process {
-    height: 35em;
+    height: 45em;
   }
 }
 
