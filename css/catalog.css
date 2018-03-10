@@ -1,0 +1,272 @@
+@import url("https://fonts.googleapis.com/css?family=Marmelad");
+/*---------reset css----------*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+font,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  font-family: inherit;
+  vertical-align: baseline;
+}
+
+:focus {
+  outline: 0;
+}
+
+body {
+  line-height: 1;
+  color: #000;
+  background: #fff;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+}
+
+caption,
+th,
+td {
+  text-align: left;
+  font-weight: normal;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+}
+
+blockquote,
+q {
+  quotes: "" "";
+}
+
+/*-------base------*/
+
+html,
+body {
+  font-family: 'Marmelad', sans-serif;
+  width: 100%;
+  height: 100%;
+}
+
+/*-------header-------*/
+
+.container-header {
+  width: 100%;
+  height: 100%;
+  float: left;
+}
+
+/*---------menu----------*/
+
+.navbar-brand {
+  padding: 3px 0 2px 2px;
+}
+
+.navbar-brand img {
+  width: auto;
+  height: 100%;
+}
+
+.navbar {
+  background: #fff;
+  border: none;
+  margin: 0;
+}
+
+.navbar-inverse {
+  border-bottom: 1px solid #000;
+}
+
+.navbar-inverse .navbar-nav li a {
+  border-bottom: 2px solid #000;
+  transition: border 0.3s;
+  text-transform: uppercase;
+  overflow: hidden;
+}
+
+.navbar-inverse .navbar-nav>li>a:focus,
+.navbar-inverse .navbar-nav>li>a:hover {
+  border-top: 2px solid #000;
+  transition: border-top 0.3s;
+  border-left: 2px solid #000;
+  border-right: 2px solid #000;
+  border-bottom: none;
+  color: #000;
+  transition: border 0.3s;
+}
+
+.navbar-inverse .navbar-nav li a:hover {
+  color: #000;
+}
+
+.collapse {
+  float: right;
+}
+
+.navbar-toggle {
+  border: none;
+}
+
+.navbar-toggle img {
+  widht: 20px;
+  height: 20px;
+  display: block;
+}
+
+.navbar-inverse .navbar-toggle:focus,
+.navbar-inverse .navbar-toggle:hover {
+  background-color: #fff;
+}
+
+/*header-photo*/
+
+.header-photo {
+  width: 100%;
+  height: 40vw;
+  margin: 10% 0 8% 0;
+  background: url("../img/22.jpg") no-repeat center;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-attachment: fixed;
+  -o-background-attachment: fixed;
+  -moz-background-attachment: fixed;
+  -webkit-background-attachment: fixed;
+}
+
+.header-mask {
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-mask h1 {
+  font-size: 12em;
+  color: #fff;
+}
+
+/*choice*/
+
+.choice {
+  width: 100%;
+  background: #fff;
+}
+
+.choice-button {
+  height: 15vw;
+  background: #fff;
+  margin: 15px 0;
+  border: none;
+}
+
+.choice-button p {
+  position: absolute;
+  top: 0;
+  text-align: center;
+}
+
+.choice-button img {
+  width: 100%;
+  height: 100%;
+}
+
+.choice-button img .col-xs-1-5 {
+  width: 20%;
+  float: left;
+}
+
+@media (min-width: 768px) {
+  .choice-button img .col-sm-1-5 {
+    width: 20%;
+    float: left;
+  }
+}
+
+@media (min-width: 992px) {
+  .choice-button img .col-md-1-5 {
+    width: 20%;
+    float: left;
+  }
+}
+
+@media (min-width: 1200px) {
+  .choice-button img .col-lg-1-5 {
+    width: 20%;
+    float: left;
+  }
+}

@@ -329,6 +329,10 @@ opacity 0.9,
   background-color: #fff;
 }
 
+#close-menu {
+  display: none;
+}
+
 /*------conteiner-about----------*/
 
 .conteiner-about {
@@ -380,7 +384,7 @@ opacity 0.9,
 /*---------catolog-product----------*/
 
 .container-product {
-  height: 75em;
+  height: 50em;
   background: #fff;
   overflow: hidden;
 }
@@ -438,32 +442,32 @@ opacity 0.9,
 }
 
 .text p {
-  line-height: 1em;
-  letter-spacing: 1px;
-  font-size: 1em;
+  line-height: 1.2em;
+  letter-spacing: 1.5px;
+  font-size: 0.875em;
   padding: 10px;
 }
 
 .blocimg a {
-  width: 50%;
-  height: 80px;
-  line-height: 68px;
-  left: 25%;
-  right: 25%;
-  top: 16em;
+  width: 60%;
+  height: 60px;
+  line-height: 52px;
+  left: 20%;
+  right: 20%;
+  top: 20em;
   background: rgba(0,0,0,0.2);
-  font-size: 1.1em;
+  font-size: 1em;
   text-decoration: none;
   text-transform: uppercase;
-  border: solid 5px #000;
+  border: solid 2px #000;
   color: #fff;
   position: absolute;
   text-align: center;
   vertical-align: center;
-  transform: translate(0%, 200%);
-  -webkit-transform: translate(0%, 200%);
-  -moz-transform: translate(0%, 200%);
-  -o-transform: translate(0%, 200%);
+  transform: translate(0%, 240%);
+  -webkit-transform: translate(0%, 240%);
+  -moz-transform: translate(0%, 240%);
+  -o-transform: translate(0%, 240%);
   transition: transform 1s, background 0.5s, color 0.5s;
 }
 
@@ -654,7 +658,7 @@ opacity 0.9,
 }
 
 .modal-content {
-  background: #000;
+  background: #fff;
   border-radius: 0;
 }
 
@@ -663,9 +667,12 @@ opacity 0.9,
   height: 100%;
 }
 
-.modal-body p {
-  font-size: 3em;
-  color: #f00;
+.close {
+  color: #000;
+  opacity: 1;
+  width: 30px;
+  height: 30px;
+  margin: 10px;
 }
 
 .product-photo button {
@@ -817,6 +824,12 @@ footer {
 
 /*---------media--------*/
 
+@media (max-width: 1200px) {
+  .container-product {
+    height: 75em;
+  }
+}
+
 @media (max-width: 992px) {
   .title-about {
     height: 5em;
@@ -845,7 +858,7 @@ footer {
   }
 
   .container-product {
-    height: 75em;
+    height: 100em;
   }
 
   .process {
@@ -913,7 +926,7 @@ footer {
   }
 
   .container-product {
-    height: 150em;
+    height: 200em;
   }
 
   .process {
