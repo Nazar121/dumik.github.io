@@ -285,11 +285,11 @@ opacity 0.9,
 }
 
 .navbar-inverse {
-  border-bottom: 1px solid #000;
+  border-bottom: 1px solid #960018;
 }
 
 .navbar-inverse .navbar-nav li a {
-  border-bottom: 2px solid #000;
+  border-bottom: 2px solid #960018;
   transition: border 0.3s;
   text-transform: uppercase;
   overflow: hidden;
@@ -297,10 +297,10 @@ opacity 0.9,
 
 .navbar-inverse .navbar-nav>li>a:focus,
 .navbar-inverse .navbar-nav>li>a:hover {
-  border-top: 2px solid #000;
+  border-top: 2px solid #960018;
   transition: border-top 0.3s;
-  border-left: 2px solid #000;
-  border-right: 2px solid #000;
+  border-left: 2px solid #960018;
+  border-right: 2px solid #960018;
   border-bottom: none;
   color: #000;
   transition: border 0.3s;
@@ -391,7 +391,7 @@ opacity 0.9,
 
 .dws {
   height: 25em;
-  background: #000;
+  background: #222;
   overflow: hidden;
   transition: 1s;
   padding: 0;
@@ -425,8 +425,8 @@ opacity 0.9,
 .blocText {
   position: absolute;
   top: 30px;
-  left: 30px;
-  right: 30px;
+  left: 15px;
+  right: 15px;
   bottom: 30px;
 }
 
@@ -437,8 +437,11 @@ opacity 0.9,
 }
 
 .text h2 {
-  font-size: 1.4em;
+  font-size: 1.2em;
   text-align: center;
+  color: #ddd;
+  left: 30px;
+  right: 30px;
 }
 
 .text p {
@@ -446,6 +449,8 @@ opacity 0.9,
   letter-spacing: 1.5px;
   font-size: 0.875em;
   padding: 10px;
+  color: #fff;
+  text-align: center;
 }
 
 .blocimg a {
@@ -459,7 +464,7 @@ opacity 0.9,
   font-size: 1em;
   text-decoration: none;
   text-transform: uppercase;
-  border: solid 2px #000;
+  border: solid 3px #000;
   color: #fff;
   position: absolute;
   text-align: center;
@@ -524,7 +529,7 @@ opacity 0.9,
 
 .process-work:hover .process-work-box {
   transition: border-bottom 0.3s;
-  border-bottom: 10px solid #000;
+  border-bottom: 10px solid #960018;
 }
 
 .process-work-box {
@@ -533,7 +538,7 @@ opacity 0.9,
   display: flex;
   flex-direction: row;
   align-items: center;
-  border-bottom: 5px solid #000;
+  border-bottom: 5px solid #960018;
   transition: border-bottom 0.3s;
 }
 
@@ -618,6 +623,7 @@ opacity 0.9,
   color: #333;
   letter-spacing: 1px;
   font-family: 'Ubuntu', sans-serif;
+  border-bottom: solid #960018 5px;
 }
 
 .product-photo {
@@ -908,7 +914,7 @@ footer {
   .navbar-inverse .navbar-nav>li>a:hover {
     border: none;
     color: #fff;
-    background: #000;
+    background: #960018;
     transition: background 0.5s;
   }
 

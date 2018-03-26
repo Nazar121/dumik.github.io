@@ -22,7 +22,7 @@ var menuOpen = function(openMenu, openClose) {
 		closeMenu.style.display = "block";
 
 
-		return  closeMenu;
+		return closeMenu;
 };
 
 var menuClose = function() {
@@ -38,8 +38,35 @@ var menuClose = function() {
 		return openMenu;
 };
 
-var menuCloseBody = function() {
+var openListMenu = function() {
+	var menuChoice = document.getElementById('choiceMenu');
+	var menuList = document.getElementById('listMenu');
+	var contentImg = document.getElementById('content');
+	var openList = document.getElementById('openList');
+	var closeList = document.getElementById('closeList');
 
+
+
+	menuChoice.style.height = "50%";
+	menuList.style.transform = "translate(0%, 0%)";
+	contentImg.style.transform = "translate(60%, 0%)";
+	openList.style.display = "none"
+	closeList.style.display = "block"
+};
+
+
+var closeListMenu = function() {
+	var menuChoice = document.getElementById('choiceMenu');
+	var menuList = document.getElementById('listMenu');
+	var contentImg = document.getElementById('content');
+
+	menuChoice.style.height = "0";
+	menuList.style.transform = "translate(200%, 0%)";
+	contentImg.style.transform = "translate(0%, 0%)";
+	openList.style.display = "block"
+	closeList.style.display = "none"
 }
+
+
 
 

@@ -144,11 +144,11 @@ body {
 }
 
 .navbar-inverse {
-  border-bottom: 1px solid #000;
+  border-bottom: 1px solid #960018;
 }
 
 .navbar-inverse .navbar-nav li a {
-  border-bottom: 2px solid #000;
+  border-bottom: 2px solid #960018;
   transition: border 0.3s;
   text-transform: uppercase;
   overflow: hidden;
@@ -156,10 +156,10 @@ body {
 
 .navbar-inverse .navbar-nav>li>a:focus,
 .navbar-inverse .navbar-nav>li>a:hover {
-  border-top: 2px solid #000;
+  border-top: 2px solid #960018;
   transition: border-top 0.3s;
-  border-left: 2px solid #000;
-  border-right: 2px solid #000;
+  border-left: 2px solid #960018;
+  border-right: 2px solid #960018;
   border-bottom: none;
   color: #000;
   transition: border 0.3s;
@@ -186,6 +186,10 @@ body {
 .navbar-inverse .navbar-toggle:focus,
 .navbar-inverse .navbar-toggle:hover {
   background-color: #fff;
+}
+
+#close-menu {
+  display: none;
 }
 
 /*header-photo*/
@@ -222,50 +226,434 @@ body {
 
 /*choice*/
 
-.choice {
+.choice-menu {
+  height: auto;
+  padding: 0 15px 0 0;
+}
+
+.wrapper {
   width: 100%;
-  background: #fff;
+  height: 4em;
+  border-top: 2px solid #000;
+  border-bottom: 2px solid #000;
 }
 
-.choice-button {
-  height: 15vw;
-  background: #fff;
-  margin: 15px 0;
-  border: none;
+.title {
+  text-align: center;
+  line-height: 2em;
 }
 
-.choice-button p {
+.title h2 {
+  font-size: 1.2em;
+  letter-spacing: 1px;
+  line-height: 3em;
+}
+
+.button-list h3 {
+  font-size: 1.3em;
+  line-height: 3em;
+}
+
+#openList {
+  display: none;
+}
+
+#closeList {
+  display: none;
+}
+
+.button-list::before {
+  content: '>';
+  width: 10px;
+  height: 10px;
+  margin: 0 0 0 60px;
+  vertical-align: middle;
   position: absolute;
-  top: 0;
+  line-height: 4em;
+  display: none;
+}
+
+.menu {
+  width: 100%;
+  height: 100%;
   text-align: center;
 }
 
-.choice-button img {
+.first-item {
+  padding: 1em 0;
+  border-bottom: 2px solid #000;
+  border-right: 2px solid #000;
+}
+
+.first-item:hover {
+  background: #000;
+  color: #fff;
+  padding: 1em 0 0 0;
+}
+
+.first-item:hover .second-item {
+  height: auto;
+  opacity: 1;
+  transition: 0.3s;
+  padding: 1em 0 0 0;
+  border-top: 1px solid #000;
+}
+
+.first-item:hover .second-item>li {
+  height: auto;
+  opacity: 1;
+  transition: 0.3s;
+  padding: 1em 0;
+  border-top: 1px solid #000;
+}
+
+.second-item {
+  height: 0px;
+  opacity: 0;
+  transition: 0.3s;
+}
+
+.second-item li {
+  height: 0px;
+  background: #fff;
+  color: #000;
+}
+
+.second-item li:hover {
+  background: #333;
+  color: #fff;
+}
+
+/*content img*/
+
+.info-content {
+  display: flex;
+  height: 285px;
+  background: #fff;
+  text-align: center;
+}
+
+.text-countainer {
+  width: 100%;
+  margin: auto 0;
+  font-size: 1.1em;
+  letter-spacing: 1px;
+  line-height: 1.1em;
+}
+
+.img-countainer {
+  padding: 15px;
+  height: auto;
+}
+
+.img-countainer img {
+  width: 100%;
+  height: auto;
+}
+
+/*--------contact--------*/
+
+.contact {
+  width: 100%;
+  height: 40em;
+  margin: 0 0 0 0;
+  background: url("../img/23.jpg") no-repeat center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -ms-background-size: cover;
+  -o-background-size: cover;
+  -background-size: cover;
+  float: left;
+}
+
+.contact-imposed {
+  width: 100%;
+  height: 40em;
+  background: rgba(1,1,1,0.5);
+}
+
+form {
+  height: 20em;
+  padding: 10em 0;
+}
+
+.form input,
+textarea {
+  width: 80%;
+  height: 3em;
+  margin: 1em;
+  padding: 2%;
+  border: 2px solid #fff;
+  background: rgba(1,1,1,0);
+  transition: background 0.3s;
+  color: #fff;
+}
+
+textarea {
+  height: 5em;
+}
+
+#submit {
+  width: 10em;
+}
+
+.contact-info {
+  height: 20em;
+  padding: 10em 0;
+}
+
+.contact-info h3 {
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 1.1em;
+  letter-spacing: 1px;
+  line-height: 1.2em;
+  font-family: 'Ubuntu' sans-serif;
+}
+
+.contact-info p {
+  font-size: 1em;
+  color: #fff;
+  letter-spacing: 1px;
+  line-height: 3em;
+  font-family: 'Ubuntu' sans-serif;
+}
+
+.form input:focus {
+  background: rgba(1,1,1,0.5);
+  transition: background 0.3s;
+}
+
+#submit:hover {
+  background: rgba(1,1,1,0.5);
+  transition: background 0.3s;
+}
+
+textarea:focus {
+  background: rgba(1,1,1,0.5);
+  transition: background 0.3s;
+}
+
+/*-------modal-------*/
+
+.modal {
+  text-align: center;
+}
+
+.modal-dialog {
+  width: 80%;
+  display: inline-block;
+  text-align: left;
+  vertical-align: middle;
+}
+
+.modal-body {
+  background: #000;
+  padding: 0;
+}
+
+.modal-content {
+  background: #000;
+  border: 0;
+}
+
+.modal-body img {
   width: 100%;
   height: 100%;
 }
 
-.choice-button img .col-xs-1-5 {
+.close {
+  color: #000;
+  opacity: 1;
+  width: 30px;
+  height: 30px;
+  margin: 10px;
+}
+
+.product-photo button {
+  background: #000;
+  overflow: hidden;
+}
+
+.product-photo button img {
+  opacity: 0.8;
+  overflow: hidden;
+  transition: 0.5s;
+}
+
+.product-photo button img:hover {
+  opacity: 0.6;
+  width: 110%;
+  height: 110%;
+  transition: 0.5s;
+}
+
+.product-photo button:hover {
+  transform: translate(0%, -5%);
+  transition: 0.5s;
+}
+
+@media (max-width: 768px) {
+  .collapse {
+    float: none;
+  }
+
+  .photo-info p {
+    width: 100%;
+    padding: 5% 0;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 1.5em;
+    line-height: 20px;
+  }
+
+  .photo-info h1 {
+    padding: 10% 0 0 0;
+    width: 100%;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 2.5em;
+    text-transform: uppercase;
+  }
+
+  .navbar-inverse .navbar-nav li a {
+    border-bottom: none;
+    text-align: center;
+  }
+
+  .navbar-inverse .navbar-nav>li>a:focus,
+  .navbar-inverse .navbar-nav>li>a:hover {
+    border: none;
+    color: #fff;
+    background: #960018;
+    transition: background 0.5s;
+  }
+}
+
+@media (max-width: 768px) {
+  .container-photo {
+    padding: 0;
+  }
+
+  .contact {
+    height: 58em;
+  }
+
+  .contact-imposed {
+    height: 58em;
+  }
+
+  form {
+    height: 33em;
+    padding: 10em 0;
+  }
+
+  .contact-info {
+    height: 25em;
+    padding: 5em 0;
+  }
+
+  .header-mask h1 {
+    font-size: 5em;
+    color: #fff;
+  }
+
+  .choice {
+    overflow: hidden;
+  }
+
+  .choice-menu {
+    height: 0px;
+    padding: 0 15px 0 0;
+  }
+
+  #openList {
+    cursor: pointer;
+    display: block;
+  }
+
+  .button-list::before {
+    display: block;
+  }
+
+  .menu {
+    width: 60%;
+    height: 100%;
+    text-align: center;
+    transform: translate(-200%, 0%);
+  }
+
+  .first-item {
+    padding: 1em 0;
+    border-bottom: 2px solid #000;
+    border-right: 2px solid #000;
+  }
+
+  .first-item:hover {
+    background: #000;
+    color: #fff;
+    padding: 1em 0 0 0;
+  }
+
+  .first-item:hover .second-item {
+    height: auto;
+    opacity: 1;
+    transition: 0.3s;
+    padding: 1em 0 0 0;
+    border-top: 1px solid #000;
+  }
+
+  .first-item:hover .second-item>li {
+    height: auto;
+    opacity: 1;
+    transition: 0.3s;
+    padding: 1em 0;
+    border-top: 1px solid #000;
+  }
+
+  .second-item {
+    height: 0px;
+    opacity: 0;
+    transition: 0.3s;
+  }
+
+  .second-item li {
+    height: 0px;
+    background: #fff;
+    color: #000;
+  }
+
+  .second-item li:hover {
+    background: #333;
+    color: #fff;
+  }
+
+  .button-list h3:hover .menu {
+    margin: 0 0 0 0;
+  }
+}
+
+.col-xs-1-5 {
   width: 20%;
   float: left;
 }
 
 @media (min-width: 768px) {
-  .choice-button img .col-sm-1-5 {
+  .col-sm-1-5 {
     width: 20%;
     float: left;
   }
 }
 
 @media (min-width: 992px) {
-  .choice-button img .col-md-1-5 {
+  .col-md-1-5 {
     width: 20%;
     float: left;
   }
 }
 
 @media (min-width: 1200px) {
-  .choice-button img .col-lg-1-5 {
+  .col-lg-1-5 {
     width: 20%;
     float: left;
   }
