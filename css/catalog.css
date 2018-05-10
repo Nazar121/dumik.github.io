@@ -113,7 +113,7 @@ q {
 
 html,
 body {
-  font-family: 'Marmelad', sans-serif;
+  font-family: fontSize;
   width: 100%;
   height: 100%;
 }
@@ -144,29 +144,30 @@ body {
 }
 
 .navbar-inverse {
-  border-bottom: 1px solid #960018;
+  border-bottom: 1px solid #13161a;
 }
 
 .navbar-inverse .navbar-nav li a {
-  border-bottom: 2px solid #960018;
+  border-bottom: 2px solid #13161a;
   transition: border 0.3s;
   text-transform: uppercase;
   overflow: hidden;
+  color: #24282b;
 }
 
 .navbar-inverse .navbar-nav>li>a:focus,
 .navbar-inverse .navbar-nav>li>a:hover {
-  border-top: 2px solid #960018;
+  border-top: 2px solid #13161a;
   transition: border-top 0.3s;
-  border-left: 2px solid #960018;
-  border-right: 2px solid #960018;
+  border-left: 2px solid #13161a;
+  border-right: 2px solid #13161a;
   border-bottom: none;
   color: #000;
   transition: border 0.3s;
 }
 
 .navbar-inverse .navbar-nav li a:hover {
-  color: #000;
+  color: #13161a;
 }
 
 .collapse {
@@ -224,18 +225,22 @@ body {
   color: #fff;
 }
 
-/*choice*/
-
-.choice-menu {
-  height: auto;
-  padding: 0 15px 0 0;
-}
+/*wrapper*/
 
 .wrapper {
   width: 100%;
   height: 4em;
-  border-top: 2px solid #000;
-  border-bottom: 2px solid #000;
+  border-top: 2px solid #13161a;
+  border-bottom: 2px solid #13161a;
+  background: #fff;
+  text-align: center;
+}
+
+.fixed {
+  top: 53px;
+  position: fixed;
+  border-bottom: 2px solid #13161a;
+  background: #fff;
 }
 
 .title {
@@ -247,7 +252,10 @@ body {
   font-size: 1.2em;
   letter-spacing: 1px;
   line-height: 3em;
+  text-align: center;
 }
+
+/*open menu*/
 
 .button-list h3 {
   font-size: 1.3em;
@@ -273,22 +281,45 @@ body {
   display: none;
 }
 
+/*choice*/
+
+.choice-menu {
+  height: auto;
+  padding: 0;
+  float: left;
+  position: static;
+  transition: 0.3s;
+}
+
+.choice-menu-fixed {
+  top: 111px;
+  position: fixed;
+  background: #f00;
+  background: #fff;
+  padding: 0;
+  float: left;
+}
+
 .menu {
   width: 100%;
   height: 100%;
   text-align: center;
+  display: inline-block;
+  position: static;
 }
 
 .first-item {
   padding: 1em 0;
-  border-bottom: 2px solid #000;
-  border-right: 2px solid #000;
+  border-bottom: 2px solid #13161a;
+  border-right: 2px solid #13161a;
+  position: static;
+  transition: 0.3s;
 }
 
 .first-item:hover {
-  background: #000;
+  background: #13161a;
   color: #fff;
-  padding: 1em 0 0 0;
+  transition: 0.3s;
 }
 
 .first-item:hover .second-item {
@@ -296,7 +327,8 @@ body {
   opacity: 1;
   transition: 0.3s;
   padding: 1em 0 0 0;
-  border-top: 1px solid #000;
+  border-top: 1px solid #13161a;
+  transition: 0.3s;
 }
 
 .first-item:hover .second-item>li {
@@ -304,7 +336,7 @@ body {
   opacity: 1;
   transition: 0.3s;
   padding: 1em 0;
-  border-top: 1px solid #000;
+  border-top: 1px solid #13161a;
 }
 
 .second-item {
@@ -316,21 +348,30 @@ body {
 .second-item li {
   height: 0px;
   background: #fff;
-  color: #000;
+  color: #13161a;
+  transition: 0.3s;
 }
 
 .second-item li:hover {
-  background: #333;
+  background: #24282b;
   color: #fff;
+  transition: 0.3s;
 }
 
 /*content img*/
+
+.content {
+  width: auto;
+  height: auto;
+  position: static;
+}
 
 .info-content {
   display: flex;
   height: 285px;
   background: #fff;
   text-align: center;
+  position: static;
 }
 
 .text-countainer {
@@ -339,11 +380,13 @@ body {
   font-size: 1.1em;
   letter-spacing: 1px;
   line-height: 1.1em;
+  position: static;
 }
 
 .img-countainer {
   padding: 15px;
   height: auto;
+  position: static;
 }
 
 .img-countainer img {
@@ -408,7 +451,7 @@ textarea {
   font-size: 1.1em;
   letter-spacing: 1px;
   line-height: 1.2em;
-  font-family: 'Ubuntu' sans-serif;
+  font-family: fontSize;
 }
 
 .contact-info p {
@@ -416,7 +459,7 @@ textarea {
   color: #fff;
   letter-spacing: 1px;
   line-height: 3em;
-  font-family: 'Ubuntu' sans-serif;
+  font-family: fontSize;
 }
 
 .form input:focus {
@@ -658,3 +701,16 @@ textarea:focus {
     float: left;
   }
 }
+
+/*
+
+R - 36 G - 40 B - 43 
+#24282B
+
+R - 248 G - 239 B - 140 
+#F8EF8C
+
+R - 19 G - 22 B - 26
+ #13161A
+
+*/
