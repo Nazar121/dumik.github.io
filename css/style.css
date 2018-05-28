@@ -1,4 +1,10 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto");
+.colorsave {
+  color: #24282b ;
+  color: #f8ef8c ;
+  color: #13161a ;
+}
+
 /*---------reset css----------*/
 
 html,
@@ -209,8 +215,8 @@ body {
   padding: 10px 20px;
   font-size: 1.2em;
   color: #000;
-  background: rgba(0,0,0,0.2);
-  border: solid 3px #000;
+  background: rgba(0,0,0,0.1);
+  border-bottom: solid 3px #f8ef8c;
   text-decoration: none;
   transition: background 0.3s;
   text-align: center;
@@ -233,7 +239,7 @@ body {
 }
 
 .photo-info-white a {
-  border: solid 3px #fff;
+  border-bottom: solid 3px #f8ef8c;
 }
 
 .photo-info-white a:hover {
@@ -293,6 +299,7 @@ opacity 0.9,
   transition: border 0.3s;
   text-transform: uppercase;
   overflow: hidden;
+  color: #24282b;
 }
 
 .navbar-inverse .navbar-nav>li>a:focus,
@@ -351,7 +358,7 @@ opacity 0.9,
   text-transform: uppercase;
   display: table-cell;
   vertical-align: middle;
-  color: #333;
+  color: #13161a;
   font-family: 'Roboto', sans-serif;
 }
 
@@ -369,7 +376,7 @@ opacity 0.9,
   vertical-align: middle;
   display: table-cell;
   font-size: 1em;
-  color: #333;
+  color: #24282b;
   letter-spacing: 1px;
 }
 
@@ -455,8 +462,8 @@ opacity 0.9,
 
 .blocimg a {
   width: 60%;
-  height: 60px;
-  line-height: 52px;
+  height: 50px;
+  line-height: 50px;
   left: 20%;
   right: 20%;
   top: 20em;
@@ -464,7 +471,7 @@ opacity 0.9,
   font-size: 1em;
   text-decoration: none;
   text-transform: uppercase;
-  border: solid 3px #000;
+  border-bottom: solid 3px #f8ef8c;
   color: #fff;
   position: absolute;
   text-align: center;
@@ -485,8 +492,7 @@ opacity 0.9,
 }
 
 .blocimg a:hover {
-  background: #fff;
-  color: #000;
+  background: #000;
   transition: 0.5s;
 }
 
@@ -499,12 +505,13 @@ opacity 0.9,
 
 .process-text {
   padding: 0 15%;
+  margin: 5em 0;
 }
 
 .process-text p {
   text-align: justify;
   font-size: 1em;
-  color: #333;
+  color: #24282b;
   line-height: 2em;
   letter-spacing: 1px;
   font-family: 'Roboto', sans-serif;
@@ -515,6 +522,7 @@ opacity 0.9,
 .process-container {
   width: 100%;
   height: 20em;
+  margin: 5em 0;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -529,7 +537,7 @@ opacity 0.9,
 
 .process-work:hover .process-work-box {
   transition: border-bottom 0.3s;
-  border-bottom: 10px solid #960018;
+  border-bottom: 10px solid #f8ef8c;
 }
 
 .process-work-box {
@@ -538,22 +546,21 @@ opacity 0.9,
   display: flex;
   flex-direction: row;
   align-items: center;
-  border-bottom: 5px solid #960018;
+  border-bottom: 5px solid #f8ef8c;
   transition: border-bottom 0.3s;
 }
 
 .process-work h3 {
   text-align: center;
-  color: #fff;
   position: relative;
   padding: 10px 0;
   text-transform: uppercase;
-  color: #000;
+  color: #13161a;
 }
 
 .process-work-box p {
   font-size: 1em;
-  color: #333;
+  color: #24282b;
   line-height: 1.5em;
   letter-spacing: 1px;
 }
@@ -562,6 +569,7 @@ opacity 0.9,
   content: '';
   position: absolute;
   display: inline-block;
+  color: #f8ef8c;
   width: 2em;
   height: 2em;
   margin: -7px 0 0 -40px;
@@ -620,10 +628,9 @@ opacity 0.9,
   text-align: center;
   font-size: 2em;
   text-transform: uppercase;
-  color: #333;
+  color: #13161a;
   letter-spacing: 1px;
   font-family: 'Roboto', sans-serif;
-  border-bottom: solid #960018 5px;
 }
 
 .product-photo {
@@ -709,6 +716,7 @@ opacity 0.9,
 .info-stuff {
   width: 100%;
   height: auto;
+  margin: 5em 0;
 }
 
 .info-stuff-text {
