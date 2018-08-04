@@ -1,9 +1,8 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto");
-.colorsave {
-  color: #24282b ;
-  color: #f8ef8c ;
-  color: #13161a ;
-}
+/*.colorsave
+	color #24282B сірий
+	color #F8EF8C жовтий
+	color #13161A темно сірий*/
 
 /*---------reset css----------*/
 
@@ -271,6 +270,7 @@ opacity 0.9,
 .glyphicon {
   width: 100%;
   height: 55px;
+  color: #f8ef8c;
 }
 
 /*---------menu----------*/
@@ -295,8 +295,7 @@ opacity 0.9,
 }
 
 .navbar-inverse .navbar-nav li a {
-  border-bottom: 1px solid #13161a;
-  transition: border 0.3s;
+  transition: background 0.5s;
   text-transform: uppercase;
   overflow: hidden;
   color: #24282b;
@@ -304,17 +303,13 @@ opacity 0.9,
 
 .navbar-inverse .navbar-nav>li>a:focus,
 .navbar-inverse .navbar-nav>li>a:hover {
-  border-top: 1px solid #13161a;
-  transition: border-top 0.3s;
-  border-left: 1px solid #13161a;
-  border-right: 1px solid #13161a;
-  border-bottom: none;
-  color: #000;
-  transition: border 0.3s;
+  color: #fff;
+  background: #24282b;
+  transition: background 0.5s;
 }
 
 .navbar-inverse .navbar-nav li a:hover {
-  color: #13161a;
+  color: #fff;
 }
 
 .collapse {
@@ -921,7 +916,7 @@ footer {
   .navbar-inverse .navbar-nav>li>a:hover {
     border: none;
     color: #fff;
-    background: #960018;
+    background: #24282b;
     transition: background 0.5s;
   }
 
