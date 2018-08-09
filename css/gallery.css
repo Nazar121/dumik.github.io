@@ -1,0 +1,189 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+/*---------reset css----------*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+font,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  font-family: inherit;
+  vertical-align: baseline;
+}
+
+:focus {
+  outline: 0;
+}
+
+body {
+  line-height: 1;
+  color: #000;
+  background: #fff;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+}
+
+caption,
+th,
+td {
+  text-align: left;
+  font-weight: normal;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+}
+
+blockquote,
+q {
+  quotes: "" "";
+}
+
+/*-------base------*/
+
+html,
+body {
+  font-family: 'Roboto', sans-serif;
+  width: 100%;
+  height: 100%;
+}
+
+/*-------header-------*/
+
+.container-header {
+  width: 100%;
+  height: 100%;
+  float: left;
+}
+
+/*---------menu----------*/
+
+.navbar-brand {
+  padding: 3px 0 2px 2px;
+}
+
+.navbar-brand img {
+  width: auto;
+  height: 100%;
+}
+
+.navbar {
+  background: #fff;
+  border: none;
+  margin: 0;
+}
+
+.navbar-inverse {
+  border-bottom: 1px solid #13161a;
+}
+
+.navbar-inverse .navbar-nav li a {
+  transition: background 0.5s;
+  text-transform: uppercase;
+  overflow: hidden;
+  color: #24282b;
+}
+
+.navbar-inverse .navbar-nav>li>a:focus,
+.navbar-inverse .navbar-nav>li>a:hover {
+  color: #fff;
+  background: #24282b;
+  transition: background 0.5s;
+}
+
+.navbar-inverse .navbar-nav li a:hover {
+  color: #fff;
+}
+
+.collapse {
+  float: right;
+}
+
+.navbar-toggle {
+  border: none;
+}
+
+.navbar-toggle img {
+  widht: 20px;
+  height: 20px;
+  display: block;
+}
+
+.navbar-inverse .navbar-toggle:focus,
+.navbar-inverse .navbar-toggle:hover {
+  background-color: #fff;
+}
+
+#close-menu {
+  display: none;
+}
