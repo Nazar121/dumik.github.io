@@ -4,7 +4,10 @@
 		<title>Furniture</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta charset="utf-8">
-		<link href="js/bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" media="screen">
+
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+		<!-- <link href="js/bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" media="screen"> -->
 		<link rel="stylesheet" type="text/css" href="css/gallery.css">
 		<link rel="shortcut icon" href="favicon.ico">
 	</head>
@@ -12,7 +15,7 @@
 
 		<!--menu-->
 
-		<div class="navbar navbar-inverse navbar-fixed-top ">
+		<!-- <div class="navbar navbar-inverse navbar-fixed-top ">
 			<div class="container">
 				<div class="navbar-header">
 					<button onclick="menuOpen();" id="open-menu"  type="button" class="navbar-toggle" data-toggle="collapse" data-target="#nav-manu">
@@ -35,15 +38,59 @@
 					</ul>
 				</div> 
 			</div>
+		</div> -->
+
+		<!-- Title -->
+		<section class="container-fluid">
+			<div class="row">
+				<div class="col-12">
+					<div class="title">Title</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Gallery -->
+		<section class="container gallery" >
+			<div class="row">
+				<!-- This place for gallery blocks -->
+			</div>
+		</section>
+
+		<!-- Slider -->
+		<div class="modal fade instagramSlider" id="modal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+			<div class="instagramModal-close" data-dismiss="modal">X</div>
+			<div class="modal-dialog modal-lg" role="document">
+				<div class="modal-content">
+					<div class="row">
+						<div class="col-8">
+							<div class="instagramImages img"></div>
+						</div>
+						<div class="col-4">
+							<div class="instagramInfo">
+								
+							</div>
+						</div>
+					</div>
+				</div>
+				<i class="fas fa-chevron-left instagramSlider-left"></i>
+				<i class="fas fa-chevron-right instagramSlider-right"></i>
+			</div>
 		</div>
 
-		<footer class="col-md-12">
+		<!-- Footer -->
+		<footer class="container-fluid">
 			<div class="row">
 				<div class="footer-info col-md-12 col-sm-12 col-xs-12">
 					<p>West Roll | 2018</p>
 				</div>
 			</div>
 		</footer>
+
+		<!-- Bootstrap 4 -->
+		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
 		<script src="https://code.jquery.com/jquery.js"></script>
 		<script src="js/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 		<script type="text/javascript" src='js/script.js'></script>

@@ -174,7 +174,7 @@ body {
 }
 
 .navbar-toggle img {
-  widht: 20px;
+  width: 20px;
   height: 20px;
   display: block;
 }
@@ -186,4 +186,66 @@ body {
 
 #close-menu {
   display: none;
+}
+
+/* --- gallery --- */
+.gallery {
+  margin: 30px auto;
+}
+
+.gallery > .row > div {
+  margin: 15px 0;
+}
+
+.gallery .img {
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  /* background: url('../img/5.jpg');
+  background-size: cover;
+  background-position: center; */
+}
+
+.title {
+  font-size: 20px;
+  font-weight: bold;
+  padding: 15px 0;
+  text-align: center;
+}
+
+/* --- instagramModal --- */
+.modal-dialog {
+  position: relative;
+  min-width: 60%;
+}
+
+.instagramImages {
+  height: 600px;
+}
+
+.instagramModal-close {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  color: #ffffff;
+}
+
+.instagramSlider-left, .instagramSlider-right {
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 35px;
+  cursor: pointer;
+}
+
+.instagramSlider-left {
+  left: 5px;
+}
+
+.instagramSlider-right {
+  right: 5px;
 }
