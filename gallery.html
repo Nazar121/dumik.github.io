@@ -1,169 +1,53 @@
 <!DOCTYPE html>
 <html>
-<head>
-		<title>галерея</title>
+	<head>
+		<title>Furniture</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta charset="utf-8">
 		<link href="js/bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" media="screen">
 		<link rel="stylesheet" type="text/css" href="css/gallery.css">
 		<link rel="shortcut icon" href="favicon.ico">
-</head>
+	</head>
 	<body>
-		<div class="navbar navbar-inverse navbar-fixed-top" id="menu">
+
+		<!--menu-->
+
+		<div class="navbar navbar-inverse navbar-fixed-top ">
 			<div class="container">
 				<div class="navbar-header">
-					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#nav-manu">
+					<button onclick="menuOpen();" id="open-menu"  type="button" class="navbar-toggle" data-toggle="collapse" data-target="#nav-manu">
 						<img src="img/menu.svg">
 					</button>
-					<a href="#" class="navbar-brand"><img src="img/Furniture.svg"></a>
+					<button onclick="menuClose();" id="close-menu" type="button" class="navbar-toggle" data-toggle="collapse" data-target="#nav-manu">
+						<img  src="img/icosvg/cancel.svg">
+					</button>
+					<a href="#" class="navbar-brand"><img src="img/rollsunblack.png"></a>
 				</div>
 				<div class="collapse navbar-collapse" id="nav-manu">
 					<ul class="nav navbar-nav">
-						<li><a href="index.html">головна</a></li>
-						<li><a href="#contact">контакти</a></li>
-						<li><a href="#">галерея</a></li>
+						<li><a id="nav-a" href="#carousel">головна</a></li>
+						<li><a id="nav-a" href="#about">про нас</a></li>
+						<li><a id="nav-a" href="#product">продукція</a></li>
+						<li><a id="nav-a" href="#process">наші роботи</a></li>
+						<li><a id="nav-a" href="#contact">контакти</a></li>
+						<li><a href="catalog.html">каталог</a></li>
+						<li><a href="gallery.html">галерея</a></li>
 					</ul>
-				</div>
+				</div> 
 			</div>
 		</div>
 
-
-		<div class="header-photo">
-			<div class="header-mask">
-				<h1>gallery</h1>
-			</div>
-		</div>
-		<section class="gallery">
-			<div onclick="openCarousel()" class="container-photo col-lg-4 col-md-4 col-sm-6 col-xs-12">
-				<div class="mask-photo">
-					<h3>Lorem ipsum.</h3>
-				</div>
-				<div class="photo-block">
-					<img src="img/5.jpg" alt="">
-				</div>
-			</div>
-			<div class="container-photo col-lg-4 col-md-4 col-sm-6 col-xs-12">
-				<div class="mask-photo">
-					<h3>Lorem ipsum.</h3>
-				</div>
-				<div class="photo-block">
-					<img src="img/5.jpg" alt="">
-				</div>
-			</div>
-			<div class="container-photo col-lg-4 col-md-4 col-sm-6 col-xs-12">
-				<div class="mask-photo">
-					<h3>Lorem ipsum.</h3>
-				</div>
-				<div class="photo-block">
-					<img src="img/5.jpg" alt="">
-				</div>
-			</div>
-			<div class="container-photo col-lg-4 col-md-4 col-sm-6 col-xs-12">
-				<div class="mask-photo">
-					<h3>Lorem ipsum.</h3>
-				</div>
-				<div class="photo-block">
-					<img src="img/5.jpg" alt="">
-				</div>
-			</div>
-			<div class="container-photo col-lg-4 col-md-4 col-sm-6 col-xs-12">
-				<div class="mask-photo">
-					<h3>Lorem ipsum.</h3>
-				</div>
-				<div class="photo-block">
-					<img src="img/5.jpg" alt="">
-				</div>
-			</div>
-			<div class="container-photo col-lg-4 col-md-4 col-sm-6 col-xs-12">
-				<div class="mask-photo">
-					<h3>Lorem ipsum.</h3>
-				</div>
-				<div class="photo-block">
-					<img src="img/5.jpg" alt="">
-				</div>
-			</div>
-			<div class="container-photo col-lg-4 col-md-4 col-sm-6 col-xs-12">
-				<div class="mask-photo">
-					<h3>Lorem ipsum.</h3>
-				</div>
-				<div class="photo-block">
-					<img src="img/5.jpg" alt="">
-				</div>
-			</div>
-			<div class="container-photo col-lg-4 col-md-4 col-sm-6 col-xs-12">
-				<div class="mask-photo">
-					<h3>Lorem ipsum.</h3>
-				</div>
-				<div class="photo-block">
-					<img src="img/5.jpg" alt="">
-				</div>
-			</div>
-			<div class="container-photo col-lg-4 col-md-4 col-sm-6 col-xs-12">
-				<div class="mask-photo">
-					<h3>Lorem ipsum.</h3>
-				</div>
-				<div class="photo-block">
-					<img src="img/5.jpg" alt="">
-				</div>
-			</div>
-			<div class="container-photo col-lg-4 col-md-4 col-sm-6 col-xs-12">
-				<div class="mask-photo">
-					<h3>Lorem ipsum.</h3>
-				</div>
-				<div class="photo-block">
-					<img src="img/5.jpg" alt="">
-				</div>
-			</div>
-			<div class="container-photo col-lg-4 col-md-4 col-sm-6 col-xs-12">
-				<div class="mask-photo">
-					<h3>Lorem ipsum.</h3>
-				</div>
-				<div class="photo-block">
-					<img src="img/5.jpg" alt="">
-				</div>
-			</div>
-			<div class="container-photo col-lg-4 col-md-4 col-sm-6 col-xs-12">
-				<div class="mask-photo">
-					<h3>Lorem ipsum.</h3>
-				</div>
-				<div class="photo-block">
-					<img src="img/5.jpg" alt="">
-				</div>
-			</div>
-		</section>
-		<section id="carousel" class="col-md-12">
-			<div class="carousel col-md-12">
-				<div class="arrow arr-left col-md-1">
-					<button><img src="img/left-arrow.svg"></button>
-				</div>
-
-				<div class="carousel-container col-md-9">
-					<div class="carousel-photo col-md-8">
-						<img src="img/16.jpg" alt="">
-					</div>
-					<div class="carousel-info col-md-4">
-							<h2>Lorem</h2>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing 	elit. Exercitationem, perspiciatis?</p>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex, similique, nulla</p>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum eveniet velit molestiae iusto, totam nobis fugit ullam, laborum voluptatum earum explicabo.</p>
-					</div>
-				</div>
-
-				<div class="arrow arr-right col-md-1">
-					<button><img src="img/right-arrow.svg"></button>
-				</div>
-			</div>
-		</section>
 		<footer class="col-md-12">
 			<div class="row">
 				<div class="footer-info col-md-12 col-sm-12 col-xs-12">
-					<p>baburka | 2017</p>
+					<p>West Roll | 2018</p>
 				</div>
 			</div>
 		</footer>
-	</body>
 		<script src="https://code.jquery.com/jquery.js"></script>
 		<script src="js/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 		<script type="text/javascript" src='js/script.js'></script>
-		<script type="text/javascript" src="js/galleryScript.js"></script>
-</html>
+		<script type="text/javascript" src="js/scriptmail.js"></script>
+	</body>
+
+</html> 
