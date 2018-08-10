@@ -62,6 +62,8 @@ $(document).ready(function(){
 	// 	console.log('slideId');
 	// });
 
+	// test com
+
 	// $('i.instagramSlider-right').on('click', function() {
 	// 	console.log('right');
 	// });
