@@ -229,6 +229,7 @@ body {
 }
 
 .instagramImages {
+  position: relative;
   height: 600px;
 }
 
@@ -259,4 +260,87 @@ body {
 
 .instagramSlider-right {
   right: -40px;
+}
+
+/* --- small slider */
+.circles {
+  position: absolute;
+  bottom: 2%;
+  left: 50%;
+  transform: translateX(-50%);
+  /* background: red; */
+  height: 20px;
+  width: 100px;
+}
+
+.circle {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border: 1px solid grey;
+  background: grey;
+  border-radius: 50%;
+  margin: 0 5px;
+}
+
+.circleActive {
+  background: white;
+}
+
+.smallSlider-left, .smallSlider-right {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  display: table;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: rgba(255,255,255,.7);
+  cursor: pointer;
+}
+
+.smallSlider-left i, .smallSlider-right i {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  font-size: 20px;
+  color: black;
+}
+
+.smallSlider-left {
+  left: 3%;
+}
+
+.smallSlider-right {
+  right: 3%;
+}
+
+
+
+@media (max-width: 575.98px) {
+
+  .instagramImages {
+    height: 300px;
+  }
+
+  .instagramSlider-left, .instagramSlider-right {
+    display: none;
+  }
+
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  
+  .instagramImages {
+    height: 400px;
+  }
+
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  
+  .instagramImages {
+    height: 500px;
+  }
+
 }

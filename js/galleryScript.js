@@ -4,6 +4,9 @@ $(document).ready(function(){
 
 	// --- Gallery ---
 	
+	var slideId;
+	var smallImageId = 0;
+
 	$( window ).resize(function() {
 		square();
 	});
@@ -19,14 +22,14 @@ $(document).ready(function(){
 
 	var galleryArr = [
 		{id: 'test_1', images: ['./img/7.jpg']},
-		{id: 'test_2', images: ['./img/5.jpg', './img/5.jpg', './img/18.jpg']},
+		{id: 'test_2', images: ['./img/5.jpg', './img/9.jpg', './img/18.jpg']},
 		{id: 'test_3', images: ['./img/9.jpg']},
-		{id: 'test_4', images: ['./img/18.jpg']},
+		{id: 'test_4', images: ['./img/18.jpg', './img/19.jpg']},
 		{id: 'test_5', images: ['./img/16.jpg']}
 	];
 	function gallery() {
 		for (var i = 0; i<galleryArr.length; i++) {
-			var block = '<div class="col-4">';
+			var block = '<div class="col-12 col-sm-6 col-lg-4">';
 			block += '<div class="img" id="'+ galleryArr[i].id +'" style="background: url(' + galleryArr[i].images[0] + ');  background-size: cover; background-position: center;" data-toggle="modal" data-target="#modal">';
 			block +=  (galleryArr[i].images.length > 1) ? '<i class="far fa-images someImg"></i></div>' : '</div>';
 			block += '</div>';
@@ -36,7 +39,6 @@ $(document).ready(function(){
 	}
 	gallery();
 
-	var slideId;
 	$('.gallery .img').on('click', function(event) {
 		slideId = event.target.id;
 		for (var i=0; i<galleryArr.length; i++) {
@@ -69,6 +71,27 @@ $(document).ready(function(){
 			'background-size': 'cover',
 			'background-position': 'center'
 		});
+		
+		smallImageId = 0;
+		if (currentItem.images.length > 1) {
+			var circles = '<div class="circles">'
+			for(var i=0; i<currentItem.images.length; i++) {
+				circles += '<span class="circle"></span>'
+			}
+			circles += '</div>';
+			$('.instagramImages').append(circles);
+			$('.instagramImages').append('<div class="smallSlider-left"><i class="fas fa-chevron-left"></i></div><div class="smallSlider-right"><i class="fas fa-chevron-right"></i></div>');
+			smallSliderNav(currentItem);
+		} else {
+			$('.instagramImages').empty();
+		}
+		
+		// smallSlider Click arrow to right
+		$('.smallSlider-right').on('click', smallSliderArrowRight);
+
+		// smallSlider Click arrow to left
+		$('.smallSlider-left').on('click', smallSliderArrowLeft);
+
 		$('.instagramInfo').text(currentItem.id);
 	}
 
@@ -126,5 +149,60 @@ $(document).ready(function(){
 			}
 		}
 	});
+
+
+	// --- Instagram small slider ---
+	// Arrow to right
+	function smallSliderArrowRight() {
+		var currentItem;
+		for(var i=0; i<galleryArr.length; i++) {
+			if (galleryArr[i].id === slideId) {
+				currentItem = galleryArr[i]; 
+			}
+		}
+
+		smallImageId++;
+		smallSliderNav(currentItem);
+	};
+	
+	// Arrow to left
+	$('.smallSlider-left').on('click', smallSliderArrowLeft);
+	function smallSliderArrowLeft() {
+		var currentItem;
+		for(var i=0; i<galleryArr.length; i++) {
+			if (galleryArr[i].id === slideId) {
+				currentItem = galleryArr[i]; 
+			}
+		}
+
+		smallImageId--;
+		smallSliderNav(currentItem);
+	};
+
+	// Navigation smallSlider
+	function smallSliderNav(item) {
+		var currentItem = item;
+		var circles = $('.circles > .circle').toArray();
+
+		for(var key in circles) {
+			// console.log(key);
+			$(circles[key]).removeClass('circleActive');
+			if (+key === +smallImageId) {
+				// console.log(circles[key]);
+				$(circles[key]).addClass('circleActive');
+
+				$('.instagramImages').css({
+					background: 'url(' + currentItem.images[+smallImageId] + ')',
+					'background-size': 'cover',
+					'background-position': 'center'
+				});
+			}
+		}
+
+		(smallImageId === 0) ? $('.smallSlider-left').hide() : $('.smallSlider-left').show();
+		(smallImageId === currentItem.images.length-1) ? $('.smallSlider-right').hide() : $('.smallSlider-right').show();
+
+	};
+
 	// The end.
 });
